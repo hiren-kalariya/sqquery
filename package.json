@@ -1,6 +1,6 @@
 {
   "name": "sqquery",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "this is use for make query easy by fronted team ",
   "main": "index.js",
   "scripts": {
