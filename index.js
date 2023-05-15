@@ -44,26 +44,27 @@ exports.getOpAttributeValue = (attributes, value) => {
  */
 exports.sqquery = (
   q,
+  condition = {},
   searchQueryColumns = [],
-  excludeColumnsFromOrder = [],
+  excludeColumnsFromOrder = []
 ) => {
   const limit = q.limit * 1 || 100;
   const page = q.page * 1 || 1;
   const skip = (page - 1) * limit;
-  const sort = q.sort || "createdAt";
-  const sortBy = q.sortBy || "DESC";
+  const sortBy = q.sortBy || "createdAt";
+  const sortOrder = q.sortOrder || "DESC";
   const searchQuery = q?.searchQuery || "";
 
   const excludeFileds = [
     "page",
-    "sort",
+    "sortBy",
     "limit",
     "fields",
-    "sortBy",
+    "sortOrder",
     "searchQuery",
   ];
   excludeFileds.forEach((el) => delete q[el]);
-  let where = {};
+  let where = { ...filter };
 
   function isJSON(str) {
     const a = JSON.stringify(str);
@@ -112,8 +113,8 @@ exports.sqquery = (
   ) {
     return { where, limit, offset: skip };
   }
-
-  return { where, order: [[sort, sortBy]], limit, offset: skip };
+  where = { ...where, ...condition };
+  return { where, order: [[sortBy, sortOrder]], limit, offset: skip };
 };
 
 /**
