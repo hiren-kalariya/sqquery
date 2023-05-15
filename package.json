@@ -19,7 +19,7 @@
     "url": "https://github.com/hiren-kalariya/sqquery/issues"
   },
   "homepage": "https://github.com/hiren-kalariya/sqquery#readme",
-  "dependencies": {
+  "devDependencies": {
     "sequelize": "^6.31.1"
   }
 }
