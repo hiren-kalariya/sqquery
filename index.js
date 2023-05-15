@@ -44,8 +44,8 @@ exports.getOpAttributeValue = (attributes, value) => {
  */
 exports.sqquery = (
   q,
+  searchQueryColumns = [],
   excludeColumnsFromOrder = [],
-  searchQueryColumns = []
 ) => {
   const limit = q.limit * 1 || 100;
   const page = q.page * 1 || 1;
