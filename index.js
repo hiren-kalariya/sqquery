@@ -64,7 +64,7 @@ exports.sqquery = (
     "searchQuery",
   ];
   excludeFileds.forEach((el) => delete q[el]);
-  let where = { ...filter };
+  let where = {};
 
   function isJSON(str) {
     const a = JSON.stringify(str);
