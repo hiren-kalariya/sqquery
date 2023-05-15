@@ -1,0 +1,25 @@
+{
+  "name": "sqquery",
+  "version": "1.0.0",
+  "description": "this is use for make query easy by fronted team ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hiren-kalariya/sqquery.git"
+  },
+  "keywords": [
+    "sqquery"
+  ],
+  "author": "hiren kalariya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hiren-kalariya/sqquery/issues"
+  },
+  "homepage": "https://github.com/hiren-kalariya/sqquery#readme",
+  "dependencies": {
+    "sequelize": "^6.31.1"
+  }
+}
