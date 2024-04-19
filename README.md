@@ -8,7 +8,7 @@
 
 Unleash the Power of Your Backend Data!
 
-Sqquerry empowers you to simplify backend data(JSON data) manipulation with a **powerful\*** suite of filtering and sorting functions.
+Sqquerry empowers you to simplify backend data(JSON data) manipulation with a \*\*powerful\*\* suite of filtering and sorting functions.
 
 Say goodbye to cumbersome data processing!
 
